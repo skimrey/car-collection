@@ -1,0 +1,18 @@
+*,*:before,*::after{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: inherit; 
+    /* border: 1px solid red; */
+  }
+
+body {
+  padding-top: 50px;
+  align-items: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
