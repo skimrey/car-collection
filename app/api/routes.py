@@ -51,10 +51,10 @@ def get_contact_two(current_user_token, id):
 @token_required
 def update_contact(current_user_token,id):
     car = Car.query.get(id) 
-    car.name = request.json['name']
-    car.email = request.json['email']
-    car.phone_number = request.json['phone_number']
-    car.address = request.json['address']
+    car.make = request.json['make']
+    car.model = request.json['model']
+    car.year = request.json['year']
+    car.serial = request.json['serial']
     car.user_token = current_user_token.token
 
     db.session.commit()
