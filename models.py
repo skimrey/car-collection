@@ -66,7 +66,7 @@ class Car(db.Model):
 
 
     def __repr__(self):
-        return f'The following contact has been added to the phonebook: {self.name}'
+        return f'The following car has been added to the phonebook: {self.model}'
 
     def set_id(self):
         return (secrets.token_urlsafe())
